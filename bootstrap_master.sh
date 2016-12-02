@@ -68,14 +68,14 @@ sed -i -e "s/PasswordAuthentication\ no/PasswordAuthentication\ yes/g" /etc/ssh/
 ###########################################
 ############ SALT #########################
 ###########################################
-apt-get install -y linux-headers-$(uname -r)  curl chrony htop 
+apt-get install -y linux-headers-$(uname -r)  curl chrony htop  vim
 wget -O - https://repo.saltstack.com/apt/debian/8/amd64/2016.11/SALTSTACK-GPG-KEY.pub | sudo apt-key add -
 echo 'deb http://repo.saltstack.com/apt/debian/8/amd64/2016.11 jessie main' > /etc/apt/sources.list.d/saltstack.list
 apt-get update
 apt-get install -y salt-master salt-ssh salt-syndic salt-cloud salt-api
 
 
-sed -i -e "s/\#interface\:\ 0\.0\.0\.0\/interface\:\ $IP_LAN/g" /etc/salt/master
+sed -i -e "s/\#interface\:\ 0\.0\.0\.0/interface\:\ $IP_LAN/g" /etc/salt/master
 
 
 
