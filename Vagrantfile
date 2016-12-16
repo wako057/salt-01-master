@@ -4,18 +4,11 @@
 
 Vagrant.configure("2") do |config|
 
-  #VAGRANT_ROOT = File.dirname(File.expand_path(__FILE__))
-  #fsfilewww = File.join(VAGRANT_ROOT, 'fsfilewww.vdi')
   config.vm.provider "virtualbox" do |v|
 	# v.gui = true
     v.name = "salt-master-01"
     v.memory = 2048
     v.cpus = 2
-
-    #unless File.exist?(fsfilewww)
-    #    v.customize ['createhd', '--filename', fsfilewww, '--size', 100 * 1024]
-    #end 
-    #v.customize ['storageattach', :id, '--storagectl', 'SATA Controller', '--port', 1, '--device', 0, '--type', 'hdd', '--medium', fsfilewww]
 
   end
   
