@@ -1,0 +1,1 @@
+{"virtualbox":{"/vagrant":{"type":"virtualbox","guestpath":"/vagrant","hostpath":"/home/greg/projects/salt-master-01/vagrant","disabled":false,"__vagrantfile":true}}}

@@ -2,4 +2,5 @@
 .vagrant/*
 ssh/id_rsa*
 splunk/splunk-6.5.1-linux-2.6-amd64.deb
+salt/users/pub_keys/*
 *.vdi
